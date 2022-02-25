@@ -3,21 +3,22 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-    //Я комментарий для GIT
 
     public static void main(String[] args) throws IOException {
 
         ArrayList<String> animalsList = FileHelper.readFromFile("ZooInfo.txt");
         ArrayList<String> animalsFacts = FileHelper.readFromFile("ZooFacts.txt");
 
-        //Я комментарий для GIT номер 2
 
+        // Задаем перечень животных
         Animals animal1 = new Animals(1, animalsList.get(0), animalsFacts.get(0));
         Animals animal2 = new Animals(2,animalsList.get(1), animalsFacts.get(1));
         Animals animal3 = new Animals(3,animalsList.get(2), animalsFacts.get(2));
+        // Задаем перечень птиц
         Birds bird1 = new Birds(1,animalsList.get(3), animalsFacts.get(3));
         Birds bird2 = new Birds(2,animalsList.get(4), animalsFacts.get(4));
         Birds bird3 = new Birds(3,animalsList.get(5), animalsFacts.get(5));
+        // Задаем перечень рыб
         Fishes fish1 = new Fishes(1, animalsList.get(6), animalsFacts.get(6));
         Fishes fish2 = new Fishes(2, animalsList.get(7), animalsFacts.get(7));
         Fishes fish3 = new Fishes(3, animalsList.get(8), animalsFacts.get(8));
@@ -47,6 +48,7 @@ public class Main {
             if (num == 1) {
                 switch (num2) {
                     case 1:
+                        //Тут у меня остались всё же вопросики по переносе этих 4 строк в отдельный класс. Всё ломается
                         System.out.println("Я " + animal1.name);
                         animal1.printInfoMove();
                         animal1.printInfoBreathe();
