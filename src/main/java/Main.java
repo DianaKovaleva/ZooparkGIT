@@ -10,6 +10,7 @@ public class Main {
         ArrayList<String> animalsList = FileHelper.readFromFile("ZooInfo.txt");
         ArrayList<String> animalsFacts = FileHelper.readFromFile("ZooFacts.txt");
 
+        //Я комментарий для GIT номер 2
 
         Animals animal1 = new Animals(1, animalsList.get(0), animalsFacts.get(0));
         Animals animal2 = new Animals(2,animalsList.get(1), animalsFacts.get(1));
