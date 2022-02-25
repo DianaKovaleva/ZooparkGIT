@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+    //Я комментарий для GIT
 
     public static void main(String[] args) throws IOException {
 
