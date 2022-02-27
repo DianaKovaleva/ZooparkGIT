@@ -1,4 +1,4 @@
-public class Birds extends MoveAndBreathe {
+public class Birds {
     int number;
     String name;
     String fact;
@@ -11,12 +11,10 @@ public class Birds extends MoveAndBreathe {
         this.fact = fact;
     }
 
-    @Override
     public void printInfoMove() {
         System.out.println("Я передвигаюсь, используя " + move);
     }
 
-    @Override
     public void printInfoBreathe() {
         System.out.println("Мне нужен " + breathe + " для дыхания");
     }

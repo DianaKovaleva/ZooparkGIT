@@ -1,9 +1,9 @@
-public class Animals extends MoveAndBreathe{
+public class Animals {
     int number;
     String name;
     String fact;
-    String move = "лапы/ноги";
-    String breathe = "кислород из воздуха";
+    static String move = "лапы/ноги";
+    static String breathe = "кислород из воздуха";
 
     public Animals (int number, String name, String fact) {
         this.number = number;
@@ -11,14 +11,16 @@ public class Animals extends MoveAndBreathe{
         this.fact = fact;
     }
 
-    @Override
-    public void printInfoMove() {
+    public static String printInfoMove() {
+        String stringMove = "Я передвигаюсь, используя " + move;
         System.out.println("Я передвигаюсь, используя " + move);
+        return stringMove;
     }
 
-    @Override
-    public void printInfoBreathe() {
+    public static String printInfoBreathe() {
+        String stringBreathe = "Мне нужен " + breathe + " для дыхания";
         System.out.println("Мне нужен " + breathe + " для дыхания");
+        return stringBreathe;
     }
 
 
